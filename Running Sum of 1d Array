@@ -1,0 +1,10 @@
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        li=[0 for i in range(len(nums))]
+        for i in range(len(nums)):
+            k=i
+            while k>=0:
+                li[i]+=nums[k]
+                k=k-1            
+        return li  
+            
